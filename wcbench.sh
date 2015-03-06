@@ -176,9 +176,9 @@ install_cbench()
     # CBench requires the OpenFlow source code, clone it
     echo "Cloning openflow source code into $OF_DIR"
     if "$VERBOSE" = true; then
-        git clone git://gitosis.stanford.edu/openflow.git $OF_DIR
+        git clone https://github.com/mgkwill/openflow.git $OF_DIR
     else
-        git clone git://gitosis.stanford.edu/openflow.git $OF_DIR &> /dev/null
+        git clone https://github.com/mgkwill/openflow.git $OF_DIR &> /dev/null
     fi
 
     # Build the oflops/configure file
